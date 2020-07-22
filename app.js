@@ -15,7 +15,7 @@ function calculateTip(){
     if (tipAmount == 0){
         tipAmount = "Do you really need help figuring out 0%?? Dont be a jerk, leave at least 5%"
     } else {
-        tipAmount = "$" + tipAmount + " tip per person" + " " + "$" + ((billAmount/split) + tipAmount) + " total per person "
+        tipAmount = "$" + tipAmount + " tip per person" + "<br>" + "$" + ((billAmount/split) + tipAmount) + " total per person "
     }
     document.getElementById("answer").innerHTML = tipAmount;
     
