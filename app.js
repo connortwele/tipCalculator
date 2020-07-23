@@ -8,17 +8,16 @@ function consoleMe(){
 }
 
 function calculateTip(){
-    var percentage = document.getElementById('percent').value;
+    var percentage = (document.getElementById('percent').value)*.01;
     var billAmount = document.getElementById('billAmount').value;
     var split = document.getElementById('billSplit').value
+    if (split == ''){split = 1} else {split = split};
     var tipAmount = (billAmount * percentage)/split;
     if (tipAmount == 0){
         tipAmount = "Do you really need help figuring out 0%?? Dont be a jerk, leave at least 5%"
     } else {
         tipAmount = "$" + tipAmount + " tip per person" + "<br>" + "$" + ((billAmount/split) + tipAmount) + " total per person "
     }
-    document.getElementById("answer").innerHTML = tipAmount;
-    
-       
+    document.getElementById("answer").innerHTML = tipAmount;    
     }
     
