@@ -11,31 +11,31 @@
 <body>
     <div class = "outerContainer">
         <h1 class="text-center">Tip Calculator</h1>
-    <div class = "container no-gutters">
-    <div class ="row justify-content-center">
-        <div class="col-sm-4">
+    <div class = "flex-container">
+        <div>
             <input type="text" id="billAmount" placeholder="Bill Amount">
         </div>
-        <div class="col-sm-4">
-        <select name="" id="percent">
-            <option selected disabled value="0">Tip Percentage</option>
-            <option value="30">30%</option>
-            <option value="25">25%</option>
-            <option value="20">20%</option>
-            <option value="15">15%</option>
-            <option value="1">10%</option>
-            <option value="05">5%</option>
-            <option value="0">0%</option>
-        </select>
+        <div>
+            <select name="" id="percent">
+                <option selected disabled value="0">Tip Percentage</option>
+                <option value="30">30%</option>
+                <option value="25">25%</option>
+                <option value="20">20%</option>
+                <option value="15">15%</option>
+                <option value="1">10%</option>
+                <option value="05">5%</option>
+                <option value="0">0%</option>
+            </select>
         </div>
-        <div class="col-sm-4">
+        <div>
             <input type="text" id="billSplit" placeholder="Number of Checks" required >
         </div>
         </div>
-        <button class="btn btn-success btn-block" onClick="calculateTip()">Show Me the Money!</button>
+        <div class="flex-container">
+        <button class="btn btn-success" onClick="calculateTip()">Show Me the Money!</button>
+        </div>
     <br>
         <div id="answer" class="text-center"></div>
-    </div>
     </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

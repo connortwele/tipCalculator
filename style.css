@@ -1,9 +1,9 @@
 body{
-    background-color: #EE4537;
+    background-image: linear-gradient(to top left, #EE4537,#EE4537,#FF6501, #FF6501);
 }
 
 .outerContainer{
-    background-color: #FFF9F5;
+    background-color: #FFF3D9;
     margin: auto;
     width: 50%;
     padding: 10px;
@@ -17,6 +17,8 @@ h1{
     font-family: 'Quantico', sans-serif;
 }
 
-.container{
-    padding-right:20px;
+.flex-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
 }
